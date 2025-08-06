@@ -40,27 +40,27 @@ text
 SuperMasterConsole/
 │
 ├── Main/
-│   └── MainConsole.java            # Entry point, handles login menu & flow
+│ └── MainConsole.java # Entry point, handles login menu & flow
 │
 ├── Auth/
-│   └── LoginService.java           # Handles login validation for roles
+│ └── LoginService.java # Handles login validation for roles
 │
 ├── Student/
-│   ├── Student.java                # Student data, semesters, ID, name
-│   ├── Subject.java                # Subject code, name, marks, grade logic
-│   ├── Semester.java               # Semester number, subjects list, total, average, grade
-│   └── StudentDashboard.java       # Student menu: view marksheet, apply reval
+│ ├── Student.java # Student data, semesters, ID, name
+│ ├── Subject.java # Subject code, name, marks, grade logic
+│ ├── Semester.java # Semester number, subjects list, total, average, grade
+│ └── StudentDashboard.java # Student menu: view marksheet, apply reval
 │
 ├── Staff/
-│   ├── Staff.java                  # Staff details (ID, name, role)
-│   └── StaffDashboard.java         # Staff menu: add student, add subject, update marks
+│ ├── Staff.java # Staff details (ID, name, role)
+│ └── StaffDashboard.java # Staff menu: add student, add subject, update marks
 │
 ├── Data/
-│   ├── Database.java               # In-memory store for all users & requests
-│   └── RevaluationRequest.java     # Revaluation model class
+│ ├── Database.java # In-memory store for all users & requests
+│ └── RevaluationRequest.java # Revaluation model class
 │
 └── Test/
-    └── TestStudentModule.java      # Dummy test data for quick development/testing
+└── TestStudentModule.java # Dummy test data for quick development/testing
 text
 </details>
 
