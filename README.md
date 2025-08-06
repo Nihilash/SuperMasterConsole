@@ -35,7 +35,6 @@ This project is modular, scalable, and built from scratch using only **Core Java
 ---
 
 ##  Project Structure
-
 SuperMasterConsole/
 │
 ├── Main/
