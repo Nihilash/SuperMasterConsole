@@ -79,4 +79,4 @@ cd SuperMasterConsole
 
 ---
 
-Feel free to ⭐ star the repository if you found it helpful!
+Feel free to star the repository if you found it helpful!
