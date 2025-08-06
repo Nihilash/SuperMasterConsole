@@ -35,6 +35,8 @@ This project is modular, scalable, and built from scratch using only **Core Java
 ---
 
 ##  Project Structure
+<details> <summary><strong>Project Structure</strong></summary>
+text
 SuperMasterConsole/
 │
 ├── Main/
@@ -59,7 +61,7 @@ SuperMasterConsole/
 │
 └── Test/
     └── TestStudentModule.java      # Dummy test data for quick development/testing
-
+</details>
 
 
 ---
