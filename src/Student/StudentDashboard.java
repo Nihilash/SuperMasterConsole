@@ -16,7 +16,7 @@ public class StudentDashboard {
 
     public void showMenu() {
         while (true) {
-            System.out.println("\n👨‍🎓 Welcome, " + student.getName() + " (ID: " + student.getId() + ")");
+            System.out.println("\n Welcome, " + student.getName() + " (ID: " + student.getId() + ")");
             System.out.println("1. View Semester Marksheet");
             System.out.println("2. Apply for Revaluation");
             System.out.println("3. Logout");
@@ -52,7 +52,7 @@ public class StudentDashboard {
                     sc.nextLine();
                     Semester rsemObj = student.getSemester(rsem);
                     if (rsemObj == null) {
-                        System.out.println("❌ No such semester.");
+                        System.out.println("No such semester.");
                         break;
                     }
                     for (Subject subj : rsemObj.getSubjects()) {
@@ -61,7 +61,7 @@ public class StudentDashboard {
                             String res = sc.nextLine();
                             if (res.equalsIgnoreCase("y")) {
                                 Database.addRevaluationRequest(new RevaluationRequest(student.getId(), rsem, subj));
-                                System.out.println("✅ Revaluation requested for " + subj.getCode());
+                                System.out.println("Revaluation requested for " + subj.getCode());
                             }
                         }
                     }
@@ -72,7 +72,7 @@ public class StudentDashboard {
                     return;
 
                 default:
-                    System.out.println("❌ Invalid option.");
+                    System.out.println("Invalid option.");
             }
         }
     }
