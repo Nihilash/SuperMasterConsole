@@ -17,7 +17,7 @@ public class StaffDashboard {
 
     public void showMenu() {
         while (true) {
-            System.out.println("\n👩‍🏫 Welcome, " + staff.getName() + " (ID: " + staff.getId() + ")");
+            System.out.println("\n Welcome, " + staff.getName() + " (ID: " + staff.getId() + ")");
             System.out.println("1. Add Student");
             System.out.println("2. Add Subject to Semester");
             System.out.println("3. Enter/Update Marks");
@@ -37,7 +37,7 @@ public class StaffDashboard {
                     System.out.print("Password: ");
                     String pass = sc.nextLine();
                     Database.addStudent(new Student(id, name, pass));
-                    System.out.println("✅ Student added.");
+                    System.out.println(" Student added.");
                     break;
 
                 case 2:
@@ -45,7 +45,7 @@ public class StaffDashboard {
                     String sid = sc.nextLine();
                     Student s = Database.getStudentById(sid);
                     if (s == null) {
-                        System.out.println("❌ Student not found.");
+                        System.out.println("Student not found.");
                         break;
                     }
                     System.out.print("Semester: ");
@@ -56,7 +56,7 @@ public class StaffDashboard {
                     System.out.print("Subject Name: ");
                     String sname = sc.nextLine();
                     s.addSubjectToSemester(sem, new Subject(code, sname));
-                    System.out.println("✅ Subject added.");
+                    System.out.println(" Subject added.");
                     break;
 
                 case 3:
@@ -64,7 +64,7 @@ public class StaffDashboard {
                     String stid = sc.nextLine();
                     Student stu = Database.getStudentById(stid);
                     if (stu == null) {
-                        System.out.println("❌ Not found.");
+                        System.out.println(" Not found.");
                         break;
                     }
                     System.out.print("Semester: ");
@@ -72,7 +72,7 @@ public class StaffDashboard {
                     sc.nextLine();
                     Semester semobj = stu.getSemester(semno);
                     if (semobj == null) {
-                        System.out.println("❌ No subjects.");
+                        System.out.println(" No subjects.");
                         break;
                     }
                     for (Subject subj : semobj.getSubjects()) {
@@ -90,7 +90,7 @@ public class StaffDashboard {
                             float nm = sc.nextFloat();
                             req.getSubject().setMarks(nm);
                             req.markProcessed();
-                            System.out.println("✅ Updated.");
+                            System.out.println("Updated.");
                         }
                     }
                     break;
