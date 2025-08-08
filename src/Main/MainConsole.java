@@ -17,7 +17,7 @@ public class MainConsole {
         TestStudentModule.loadDummyData();
 
         while (true) {
-            System.out.println("\n======= 🎓 Welcome to SuperMasterConsole =======");
+            System.out.println("\n======= Welcome to SuperMasterConsole =======");
             System.out.println("Choose Login Type:");
             System.out.println("1. Student");
             System.out.println("2. Staff");
@@ -38,7 +38,7 @@ public class MainConsole {
                         StudentDashboard sd = new StudentDashboard(student, sc);
                         sd.showMenu();
                     } else {
-                        System.out.println("❌ Invalid Student ID or Password.");
+                        System.out.println("Invalid Student ID or Password.");
                     }
                     break;
 
@@ -52,16 +52,16 @@ public class MainConsole {
                         StaffDashboard td = new StaffDashboard(staff, sc);
                         td.showMenu();
                     } else {
-                        System.out.println("❌ Invalid Staff ID or Password.");
+                        System.out.println("Invalid Staff ID or Password.");
                     }
                     break;
 
                 case 3:
-                    System.out.println("✅ Thank you for using SuperMasterConsole.");
+                    System.out.println("Thank you for using SuperMasterConsole.");
                     return;
 
                 default:
-                    System.out.println("❌ Invalid choice.");
+                    System.out.println("Invalid choice.");
             }
         }
     }
